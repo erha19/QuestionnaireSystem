@@ -1,0 +1,21 @@
+{
+  "name": "qs_development",
+  "version": "0.0.1",
+  "description": "A pratice project building with react and express",
+  "private": true,
+  "dependencies": {
+    "debug": "^2.2.0",
+    "express": "2.5.x",
+    "express-resource": ">= 0.2.4",
+    "jade": ">= 0.27.2",
+    "mysql": "^2.10.0",
+    "sequelize": "3.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplefatty/QuestionnaireSystem.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
