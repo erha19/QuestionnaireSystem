@@ -20,7 +20,6 @@ app.get('/api', function(req, res){
     'routes_list': routes_list
   });
 });
-
 var answer = app.resource('api/answer', require('../resources/answer'),{ format: 'json' });
 var paper = app.resource('api/paper', require('../resources/paper'),{ format: 'json' });
 var papers = app.resource('api/papers', require('../resources/papers'),{ format: 'json' });
