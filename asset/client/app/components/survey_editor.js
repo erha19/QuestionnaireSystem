@@ -52,7 +52,7 @@ var SurveyEditor = React.createClass({
       <div className='survey-editor'>
         <div className='row'>
           <aside className='sidebar col-md-3'>
-            <h2>Modules</h2>
+            <h2>题目选择区</h2>
             <DraggableQuestions />
           </aside>
 
@@ -63,7 +63,7 @@ var SurveyEditor = React.createClass({
               onChange={this.handleFormChange}
             />
 
-            <Divider>Questions</Divider>
+            <Divider>问卷题目</Divider>
             <ReactCSSTransitionGroup transitionName='question'>
               {questions}
             </ReactCSSTransitionGroup>
@@ -75,11 +75,11 @@ var SurveyEditor = React.createClass({
               onDragLeave={this.handleDragLeave}
               onDrop={this.handleDrop}
             >
-              Drag and drop a module from the left
+              从左边拖拽进问卷区添加题目
             </div>
 
             <div className='actions'>
-              <button className="btn btn-lg btn-primary btn-save" onClick={this.handleSaveClicked}>Save</button>
+              <button className="btn btn-lg btn-primary btn-save" onClick={this.handleSaveClicked}>保存</button>
             </div>
           </div>
         </div>

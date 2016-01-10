@@ -8,8 +8,8 @@ var MainNav = React.createClass({
     return (
       <nav className='main-nav' role='navigation'>
         <ul className='nav navbar-nav'>
-          <li><Link to="list">All Surveys</Link></li>
-          <li><Link to="add">Add Survey</Link></li>
+          <li><Link to="list">所有问卷</Link></li>
+          <li><Link to="add">添加问卷</Link></li>
         </ul>
       </nav>
     );

@@ -3,9 +3,9 @@ var React = require('react');
 
 var NotFound = React.createClass({
   render:function(){
-    return <div>
+    return <div className="page-not-found">
       <h1>404</h1>
-      <p>The Page you were looking for isn&apos;t here!</p>
+      <p>页面变成蝴蝶飞走啦~</p>
     </div>;
   }
 });

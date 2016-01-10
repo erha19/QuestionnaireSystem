@@ -26,7 +26,7 @@ exports.create = function(req, res){
 };
 // /api/question/:question
 exports.show = function(req, res){
-  models.Question.find({where:{id:req.params.question}}).then(function(question) {
+  models.Question.findById(req.params.question).then(function(question) {
     if(!question)
     	res.send('{"tip":"not found"}');
     else

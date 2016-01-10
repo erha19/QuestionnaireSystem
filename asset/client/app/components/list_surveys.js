@@ -34,12 +34,12 @@ var ListSurveys = React.createClass({
 
   render: function(){
     if(!this.state.surveys){
-      return <div>Loading ... </div>
+      return <div>加载中 ... </div>
     }
 
     return (
       <div className='list-surveys'>
-        <h1>Active Surveys</h1>
+        <h1>问卷列表</h1>
         <SurveyTable surveys={this.state.surveys}/>
       </div>
     );

@@ -8,9 +8,10 @@ var DraggableQuestions = React.createClass({
   render: function () {
     return (
       <ul className="modules list-unstyled">
-        <li><ModuleButton text='Yes / No' questionType='yes_no'/></li>
-        <li><ModuleButton text='Multiple choice' questionType='multiple_choice'/></li>
-        <li><ModuleButton text='Essay' questionType='essay'/></li>
+        <li><ModuleButton text='判断题' questionType='yes_no'/></li>
+        <li><ModuleButton text='单项选择题' questionType='multiple_choice'/></li>
+        <li><ModuleButton text='多项选择题' questionType='multiple_choice'/></li>
+        <li><ModuleButton text='简答题' questionType='essay'/></li>
       </ul>
     );
   },

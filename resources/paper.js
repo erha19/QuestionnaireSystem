@@ -15,7 +15,6 @@ exports.new = function(req, res){
   	res.send('{"tip":"error","error":"'+err.message+'"}')
   })
 };
-
 exports.create = function(req, res){
   models.Paper.create(req.body).then(function(){
   	res.send('{"tip":"success"}');
@@ -26,7 +25,7 @@ exports.create = function(req, res){
 };
 // /api/paper/:paper
 exports.show = function(req, res){
-  models.Paper.find({where:{id:req.params.paper}}).then(function(paper) {
+  models.Paper.findById(req.params.paper).then(function(paper) {
     if(!paper)
     	res.send('{"tip":"not found"}');
     else

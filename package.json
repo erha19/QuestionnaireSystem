@@ -17,5 +17,9 @@
   },
   "scripts": {
     "start": "node server.js"
+  },
+  "devDependencies": {
+    "crc": "^3.4.0",
+    "lodash": "^3.10.1"
   }
 }

@@ -26,7 +26,7 @@ exports.create = function(req, res){
 };
 // /api/people/:person
 exports.show = function(req, res){
-  models.PeopleInfo.find({where:{id:req.params.person}}).then(function(people) {
+  models.PeopleInfo.findById(req.params.person).then(function(people) {
     if(!people)
     	res.send('{"tip":"not found"}');
     else

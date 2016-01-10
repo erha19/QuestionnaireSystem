@@ -4,8 +4,7 @@
 1. 首先确认有安装 [npm](https://npmjs.org/) [node](http://nodejs.org/) 
 2. 运行`$ git clone https://github.com/simplefatty/QuestionnaireSystem.git`
 3. 运行`$ npm install`
-4. 运行`$ node_modules/sequelize/bin/sequelize -m` 
-5. 修改`config/models.json`中的数据库配置确保与本地一致
-6. 运行`$ node seed.js` 
-7. 最后启动应用 `$ node server.js`或者`$ npm start`
-8. 打开浏览器 `http://127.0.0.1:3000` / `http://127.0.0.1:3000/people/1`.
+4. 最后启动应用 `$ node server.js`或者`$ npm start`
+5. 打开浏览器 `http://127.0.0.1:8080` / `http://127.0.0.1:8080/people/1`.
+6. 访问`http://127.0.0.1:8080/define/`生成数据库表,请确保`config/models.json`信息正确
+7. 可以运行`node seed.js`插入简单的数据测试

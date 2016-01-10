@@ -19,11 +19,11 @@ var TakeSurveyCtrl = require('./components/take_survey_ctrl');
 var appRouter = (
   <Routes location="history">
     <Route title="SurveyBuilder" handler={App}>
-      <Route name="list" path="/lists5" handler={ListSurveys} />
+      <Route name="list" path="/list" handler={ListSurveys} />
       <Route title="Add Survey to SurveyBuilder" name="add" path="/add_survey" handler={AddSurvey} />
       <Route name="edit" path="/surveys/:surveyId/edit" handler={EditSurvey} />
       <Route name="take" path="/surveys/:surveyId" handler={TakeSurveyCtrl} />
-      <NotFound title="Page Not Found" handler={NotFoundHandler}/>
+      <NotFound title="404" handler={NotFoundHandler}/>
     </Route>
   </Routes>
 );

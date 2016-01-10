@@ -18,11 +18,11 @@ var SurveyTable = React.createClass({
       <table className="table survey-table">
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Published On</th>
-            <th>Last Active</th>
-            <th>Completions</th>
-            <th>Activity</th>
+            <th>标题</th>
+            <th>发布于</th>
+            <th>最后修改</th>
+            <th>填写人数</th>
+            <th>状态</th>
             <th></th>
           </tr>
         </thead>

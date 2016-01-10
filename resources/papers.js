@@ -26,7 +26,7 @@ exports.create = function(req, res){
 };
 // /api/papers/:paper
 exports.show = function(req, res){
-  models.Papers.find({where:{id:req.params.paper}}).then(function(paper) {
+  models.Papers.findById(req.params.paper).then(function(paper) {
     if(!paper)
     	res.send('{"tip":"not found"}');
     else

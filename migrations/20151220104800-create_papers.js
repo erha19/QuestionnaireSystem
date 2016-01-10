@@ -24,6 +24,16 @@ module.exports = {
           type: DataTypes.DATE,
           allowNull: false
         },
+        _title: {
+          type: DataTypes.STRING,
+          len:255,
+          allowNull: false
+        },
+        _description: {
+          type: DataTypes.STRING,
+          len:255,
+          allowNull: false
+        },
       },
       {}
     )

@@ -25,5 +25,6 @@ var paper = app.resource('api/paper', require('../resources/paper'),{ format: 'j
 var papers = app.resource('api/papers', require('../resources/papers'),{ format: 'json' });
 var people = app.resource('api/people', require('../resources/people'),{ format: 'json' });
 var question = app.resource('api/question', require('../resources/question'),{ format: 'json' });
+var define = app.resource('api/define', require('../resources/define'));
 
 module.exports = true;

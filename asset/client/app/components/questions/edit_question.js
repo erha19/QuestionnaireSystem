@@ -4,8 +4,8 @@ var React = require('react');
 
 var typeLabels = {
   yes_no: 'Yes / No',
-  multiple_choice: 'Multiple Choice',
-  essay: 'Essay'
+  multiple_choice: '多项选择',
+  essay: '描述题'
 };
 
 var EditQuestion = React.createClass({

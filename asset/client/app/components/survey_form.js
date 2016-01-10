@@ -11,14 +11,14 @@ var SurveyForm = React.createClass({
   render: function () {
     return (
       <div>
-        <h2>Title</h2>
+        <h2>问卷标题</h2>
         <input
           className='title'
           type='text'
           value={this.props.title}
           onChange={this.handleTitleChange} />
 
-        <h2>Introduction</h2>
+        <h2>简单介绍</h2>
         <textarea
           className='introduction'
           value={this.props.introduction}
