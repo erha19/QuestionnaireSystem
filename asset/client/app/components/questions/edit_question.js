@@ -3,8 +3,9 @@
 var React = require('react');
 
 var typeLabels = {
-  yes_no: 'Yes / No',
+  yes_no: '判断题',
   multiple_choice: '多项选择',
+  single_choice:'单项选择',
   essay: '描述题'
 };
 
@@ -35,7 +36,7 @@ var EditQuestion = React.createClass({
   },
 
   handleRemove: function () {
-    if (confirm('Are you sure you want to delete this ' + this.getTypeLabel())) {
+    if (confirm('确认删除该' + this.getTypeLabel())) {
       this.props.onRemove(this.props.key);
     }
   }

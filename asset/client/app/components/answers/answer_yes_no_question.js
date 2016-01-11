@@ -9,7 +9,7 @@ var AnswerYesNoQuestion = React.createClass({
     onCompleted: React.PropTypes.func.isRequired
   },
   render:function() {
-    var choices = ["Yes", "No"];
+    var choices = ["对", "错"];
     var props = merge({}, this.props, {
       choices: choices
     });

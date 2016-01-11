@@ -1,8 +1,8 @@
 exports.index = function(req, res){
-  models.Papers.findAll().then(function(papers) {
+  models.Papers.findAndCountAll().then(function(papers) {
     res.json(
-      papers.map(function(paper) {
-        return paper.values;
+      papers.rows.map(function(paper) {
+        return paper.dataValues;
       })
     );
   });

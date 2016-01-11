@@ -39,7 +39,6 @@ function buildScript(file, watch) {
   var bundler = watch ? watchify(props) : browserify(props);
   bundler.transform(reactify);
   function rebundle() {
-    console.log('build')
     var stream = bundler.bundle({debug: true});
     return stream.on('error', handleErrors)
     .pipe(source(file))

@@ -16,10 +16,10 @@ var ListSurveys = React.createClass({
           setState({
             surveys:[
               {
-                id: 'asd123',
-                uri: 'asd123',
-                editUri: 'ad123',
-                title: 'Superhero mashup',
+                id: '1',
+                uri: '1',
+                editUri: '1',
+                title: '一份很随意的问卷',
                 publishedDate: new Date(),
                 modifiedDate: new Date(),
                 activity: [121,32,54,12,546]

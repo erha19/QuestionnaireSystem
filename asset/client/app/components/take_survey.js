@@ -42,7 +42,7 @@ var TakeSurvey = React.createClass({
         <h1>{this.props.title}</h1>
         <p>{this.props.description}</p>
         {this.renderItems()}
-        <button className="btn btn-primary" onClick={this.handleClick}>Submit</button>
+        <button className="btn btn-primary submit-btn" onClick={this.handleClick}>提交</button>
       </div>
     );
   }

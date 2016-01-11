@@ -1,11 +1,12 @@
 var YesNoQuestion = require('./answer_yes_no_question');
 var MultipleQuestion = require('./answer_multiple_choice_question');
-// var Question = require('./answer_radio_input');
+var SingleQuestion= require('./answer_single_choice_question');
 var EssayQuestion = require('./answer_essay_question');
 
 var answerTypeMap = {
   yes_no: YesNoQuestion,
   multiple_choice: MultipleQuestion,
+  single_choice:SingleQuestion,
   essay: EssayQuestion
 };
 

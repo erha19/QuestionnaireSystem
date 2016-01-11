@@ -1,8 +1,8 @@
 exports.index = function(req, res){
-  models.PeopleInfo.findAll().then(function(peoples) {
+  models.PeopleInfo.findAndCountAll().then(function(peoples) {
     res.json(
-      peoples.map(function(people) {
-        return people.values;
+      peoples.rows.map(function(peoples) {
+        return peoples.dataValues;
       })
     );
   });

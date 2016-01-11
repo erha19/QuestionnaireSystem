@@ -23,7 +23,8 @@ var SurveyTable = React.createClass({
             <th>最后修改</th>
             <th>填写人数</th>
             <th>状态</th>
-            <th></th>
+            <th>分享</th>
+            <th>操作</th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>

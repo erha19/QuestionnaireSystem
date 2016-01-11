@@ -4,7 +4,7 @@ var React = require("react");
 var Link = require('react-router').Link;
 var Sparkline = require('./sparkline');
 
-var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var MONTHS = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'];
 
 var formatDate = function (date) {
   return MONTHS[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
@@ -44,6 +44,9 @@ var SurveyTableRow = React.createClass({
         <td className='total'>{integerWithThousandsSeparator(total)}</td>
         <td className='activity'>
           <Sparkline points={survey.activity} />
+        </td>
+        <td>
+          <input type='text' value='http://localhost:3000/surveys/1'/>
         </td>
         <td>
           <Link to='edit' surveyId={survey.id} className="btn btn-link btn-editSurvey edit">

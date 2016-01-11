@@ -1,37 +1,37 @@
 var mockSurveyData = {
   id: 435,
-  title: "Harry Potter Character Quiz",
-  description: "Which Harry Potter character are you? Finally put this burning question to rest...",
+  title: "很随意的一份调查问卷",
+  description: "这是一些测试数据...",
   createdAt: new Date(),
   updatedAt: new Date(),
   items: [{
     "id": 35,
     "type": "yes_no",
     "meta": {
-      "label": "Do You Have a Favorite Spell?"
+      "label": "你觉得这件事这样做对吗?"
     }
   }, {
     "id": 36,
     "type": "yes_no",
     "meta": {
-      "label": "Do You Have a Favorite Character?"
+      "label": "西红柿炒蛋是一定得先下蛋才行?"
     }
   }, {
     "id": 37,
     "type": "multiple_choice",
     "meta": {
-      "label": "Favorite Magical Tool",
+      "label": "你最常用的开发工具",
       "choices": [
-        "Time Turner",
-        "Pensive",
-        "Port-key"
+        "Idea",
+        "Sublime",
+        "VScode"
       ]
     }
   }, {
     "id": 38,
     "type": "essay",
     "meta": {
-      "label": "Which books was your favorite and why?"
+      "label": "简述你的这份问卷的看法?"
     }
   }]
 };

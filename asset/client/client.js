@@ -7,12 +7,11 @@
 //Only the client side needs es5-shim so only include in bundle not app
 require('es5-shim/es5-shim');
 require('es5-shim/es5-sham');
-
+var zepto = require('zepto/zepto.min');
 var React = require('react/addons');
 var app_router = require('./app/app_router');
 
 
 //allow react dev tools work
 window.React = React;
-
 React.renderComponent(app_router, document.body); 

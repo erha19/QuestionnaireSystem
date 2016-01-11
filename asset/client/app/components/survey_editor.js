@@ -9,6 +9,7 @@ var SurveyForm = require('./survey_form');
 
 var EditYesNoQuestion = require('./questions/edit_yes_no_question');
 var EditMultipleChoiceQuestion = require('./questions/edit_multiple_choice_question');
+var EditSingleChoiceQuestion = require('./questions/edit_single_choice_question');
 var EditEssayQuestion = require('./questions/edit_essay_question');
 
 var SurveyActions = require("../flux/SurveyActions");
@@ -20,7 +21,8 @@ var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 var SUPPORTED_QUESTIONS = {
   yes_no:           EditYesNoQuestion,
   multiple_choice:  EditMultipleChoiceQuestion,
-  essay:            EditEssayQuestion
+  essay:            EditEssayQuestion,
+  single_choice:    EditSingleChoiceQuestion
 };
 
 var SurveyEditor = React.createClass({
@@ -79,7 +81,7 @@ var SurveyEditor = React.createClass({
             </div>
 
             <div className='actions'>
-              <button className="btn btn-lg btn-primary btn-save" onClick={this.handleSaveClicked}>保存</button>
+              <button className="btn btn-lg btn-primary btn-save submit-btn" onClick={this.handleSaveClicked}>保存</button>
             </div>
           </div>
         </div>

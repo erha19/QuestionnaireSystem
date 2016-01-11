@@ -1,5 +1,4 @@
 var resource = require('express-resource');
-
 //index: list of options
 app.get('/api', function(req, res){
   //All routes we have defined, along with the verbs
@@ -25,6 +24,7 @@ var paper = app.resource('api/paper', require('../resources/paper'),{ format: 'j
 var papers = app.resource('api/papers', require('../resources/papers'),{ format: 'json' });
 var people = app.resource('api/people', require('../resources/people'),{ format: 'json' });
 var question = app.resource('api/question', require('../resources/question'),{ format: 'json' });
+var question = app.resource('api/create/papers', require('../resources/createPapers'),{ format: 'json' });
 var define = app.resource('api/define', require('../resources/define'));
 
 module.exports = true;
